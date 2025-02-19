@@ -5,7 +5,7 @@ export default defineConfig({
   outDir: 'build',
   format: ['cjs', 'esm'],
   sourcemap: true,
-  dts: true,
+  dts: false,
   external: ['vitest'],
   ignoreWatch: ['src/**/*.test.ts', 'src/**/*.spec.ts'],
 })
