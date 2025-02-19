@@ -4,8 +4,8 @@ export default defineConfig({
   entry: ['src/server.ts'],
   outDir: 'build',
   format: ['cjs'],
-  clean: true,
+  sourcemap: true,
   dts: true,
-  noExternal: ['fastify'],
+  external: ['vitest'],
   ignoreWatch: ['src/**/*.test.ts', 'src/**/*.spec.ts'],
 })
