@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build",
+    "build": "tsup src --out-dir build --external vitest --ignore-watch \"**/*.spec.ts\"",
     "test": "vitest run --dir src/services",
     "test:watch": "vitest --dir src/services"
   },
