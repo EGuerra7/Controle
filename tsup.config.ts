@@ -3,7 +3,7 @@ import { defineConfig } from 'tsup'
 export default defineConfig({
   entry: ['src/server.ts'],
   outDir: 'build',
-  format: ['cjs', 'esm'],
+  format: ['cjs'],
   clean: true,
   dts: true,
   noExternal: ['fastify'],
